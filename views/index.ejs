@@ -1,0 +1,94 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigPipe Project</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* Additional styles for the title */
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background-color: #0b0a0a98;
+      color: #fe6200;
+    }
+  </style>
+</head>
+<body style="background-color: #130603af;"></body>
+<style>
+
+        
+        /* Add more styles as needed */
+
+    </style>  
+<h1>BigPipe Project</h1>
+
+  <!-- Placeholder for content block 1 -->
+  <!-- <div id="content-block-1"></div> -->
+
+  <!-- Placeholder for content block 2 -->
+  <!-- <div id="content-block-2"></div> -->
+  <div id="image-container">
+
+    <!-- The div elements will be added here -->
+
+</div>
+
+
+  <script>
+
+    var container = document.getElementById('image-container');
+
+
+    for (var i = 1; i <= 10; i++) {
+
+        var newDiv = document.createElement('div');
+
+        newDiv.id = 'content-block-' + i;
+
+        // newDiv.textContent = 'Content block ' + i; // You can modify this line to display different content for each div
+
+        container.appendChild(newDiv);
+
+    }
+
+</script>
+
+  
+  
+<style>
+button
+{margin: 40px;text-align: center;
+font-size: large;}
+div {margin: 10px;font-size: larger;font-style: italic;color: aliceblue;text-align: center;display:flexbox;}
+#imageContainer{margin: 0 auto;
+
+}
+</style>
+  <!-- Load JavaScript to initiate BigPipe rendering -->
+  <script src="/js/bigpipe.js"></script>
+  <ul1>
+    <li2>
+      <button id="myButton" style="display: float;margin: auto;  background-color: rgb(226, 124, 0); color: rgb(0, 0, 0); padding: 10px 20px; font-size: 16px; border: solid; cursor: pointer;" onclick="location.reload()" onmouseover="changeText()" onmouseout="resetText()" >Reload</button> 
+    </li2>
+    </ul1>
+
+    <ul3>
+    <li3> 
+      <button id="myButton2" style="display: float;margin: auto; background-color: rgb(226, 124, 0); color: rgb(0, 0, 0); padding: 10px 20px; font-size: 16px; border: solid; cursor: pointer;" onclick="loadingbutton() ,changeText2()" >Load More</button> 
+    </li3>
+  </ul3>
+
+
+<ul2>
+  <li> 
+    <button id="myButton3" style="display: float;margin: auto; background-color: rgb(226, 124, 0); color: rgb(0, 0, 0); padding: 10px 20px; font-size: 16px; border: solid; cursor: pointer;" onclick="loadImage('https://images.pexels.com/photos/117602/pexels-photo-117602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')" >Load image</button> 
+  </li>
+</ul2>
+ <div id="image-container"></div>
+
+ <script src="script.js"></script>
+</body>
+</html>
